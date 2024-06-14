@@ -16,7 +16,8 @@ import matplotlib.patches as patches
 import bz2
 import gc
 import openjpeg
-from label_cadidate_lesions import label_cadidate
+# from label_cadidate_lesions import label_cadidate
+from label_cadidate_scoring import label_cadidate
 from pydicom import dcmread
 from tqdm import tqdm
 
