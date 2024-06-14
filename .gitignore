@@ -16,6 +16,6 @@ __pycache__/
 *.mat
 *.gz
 *.pth
-
+*.json
 
 internal_data/
