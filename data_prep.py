@@ -32,7 +32,8 @@ if not os.path.exists(patch_dir_path):
 
 dcm_dir_path = os.path.join(parent_folder, 'dataset/cocacoronarycalciumandchestcts-2/Gated_release_final/patient')
 xml_dir_path = os.path.join(parent_folder, 'dataset/cocacoronarycalciumandchestcts-2/Gated_release_final/calcium_xml')
-heart_nii_dir_path = "/data/scratch/hmo/coca_heart"
+# heart_nii_dir_path = "/data/scratch/hmo/coca_heart"
+heart_nii_dir_path = os.path.join(current_dir, "coca_nifti")
 
 
 def main():
@@ -91,9 +92,9 @@ def main():
     ## Exclude patient having wrong annotation
     ids.remove('155')
 
+    ## Check for only three subjects
+    ids = ['196', '132', '349']
     print ("ids", ids)
-    ## Check for two subjects
-    # ids = ['14', '15']
 
     for id in tqdm(ids):
         nii_id_dir = os.path.join(heart_nii_dir_path, id)     
