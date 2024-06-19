@@ -5,9 +5,6 @@
 __pycache__/
 *.py[cod]
 *.dcm
-*.png
-*.jpg
-*.jpeg
 *.pdf
 *.npy
 *.log
