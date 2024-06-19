@@ -12,16 +12,26 @@ This work introduces an automatic CAC scoring method that uses multi-atlas segme
 - Our work was externally validated on the [Rotterdam Study](https://pubmed.ncbi.nlm.nih.gov/38324224/)
 
 ## Run
-Data preparation
+Generate patches labeled patches with annotated images 
 ```bash
-python3 data_valid.py 
+python3 patch_prep.py -patch_size 45
 ```
-Initialization
+Split the patch data into non-overlapping 5 folds w.r.t subjects  
 ```bash
-python3 initializationS.py --
+python3 k-fold_prep.py -normalize
 ```
-
-
+Evaluate binary classification performance and save the trained models
+```bash
+python3 fp_classifier_train_subject_fold.py -batch_size 32 -n_epochs 100 -lr 1e-4
+```
+Compute CAC scores
+```bash
+python3 coca_internal_eval.py -trained_model 'fp_vgg_trained_model_3.pth'
+```
+Assess the agreement between computed scores and reference scores
+```bash
+python3 coca_score_agreement.py
+```
 
 ## References
 ```
