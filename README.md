@@ -12,7 +12,7 @@ This work introduces an automatic CAC scoring method that uses multi-atlas segme
 - Our work was externally validated on the [Rotterdam Study](https://pubmed.ncbi.nlm.nih.gov/38324224/)
 
 ## Run
-Generate patches labeled patches with annotated images 
+Generate labeled patches with annotated images 
 ```bash
 python3 patch_prep.py -patch_size 45
 ```
