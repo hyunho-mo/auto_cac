@@ -49,3 +49,8 @@ Bibtex entry ready to be cited
   organization={Springer}
 }
 ```
+
+## Acknowledgments
+```
+  This work is part of the project MyDigiTwin with project number 628.011.213 of the research programme "COMMIT2DATA - Big Data \& Health" which is partly financed by the Dutch Research Council (NWO). Furthermore, this work used the Dutch national e-infrastructure with the support of the SURF Cooperative using grant no. EINF-7675.
+```
