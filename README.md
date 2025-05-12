@@ -35,10 +35,17 @@ python3 coca_score_agreement.py
 
 ## References
 ```
-TBD
+Mo, Hyunho, Daniel Bos, Maryam Kavousi, Maarten JG Leening, and Esther E. Bron. "Coronary Artery Calcium Scoring from Non-contrast Cardiac CT Using Deep Learning with External Validation." In International Workshop on Statistical Atlases and Computational Models of the Heart, pp. 122-131. Cham: Springer Nature Switzerland, 2024.
 ```
 
 Bibtex entry ready to be cited
 ```
-TBD
+@inproceedings{mo2024coronary,
+  title={Coronary Artery Calcium Scoring from Non-contrast Cardiac CT Using Deep Learning with External Validation},
+  author={Mo, Hyunho and Bos, Daniel and Kavousi, Maryam and Leening, Maarten JG and Bron, Esther E},
+  booktitle={International Workshop on Statistical Atlases and Computational Models of the Heart},
+  pages={122--131},
+  year={2024},
+  organization={Springer}
+}
 ```
